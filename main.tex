@@ -1,0 +1,260 @@
+%------------------------
+% Resume Template
+% Author : Anubhav Singh
+% Github : https://github.com/xprilion
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,20pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+\fontfamily{phv}\selectfont
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+
+  \textbf {\LARGE  BILAL HAMEED}
+
+  \vspace{3px}
+  
+  \\ Email: \href{mailto:bilalhameed248@gmail.com}{bilalhameed248@gmail.com}
+  \vspace{3px}
+  & \href{https://www.linkedin.com/in/bilalhameed248}{Linkedin: /bilalhameed248} 
+ \\ 
+  Cell: \href{tel:+923215233710}{+923215233710}
+  & \href{https://github.com/bilalhameed248}{Github: ~github.com/bilalhameed248} \\
+  
+\end{tabular*}
+
+% --------Experience---------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading{MTBC CareCloud Inc.}{Islamabad Pakistan}
+    {Data Scientist (Full-time)}{Jul 2023 - Present}
+    \section{Projects}
+    \resumeItemListStart
+    \resumeSubItem{Revenue Cycle Management (RCM) }
+          {Designed, developed, and automated the MTBC CareCloud Revenue Cycle Management system to forecast monthly and daily charges, as well as payments associated with claims generated during the billing process. I implemented a machine learning algorithm, specifically XGBoost Regression, and trained it using three years' worth of historical data from 800 healthcare practices (hospitals). This algorithm enabled the prediction of monthly charges and payments, and I further integrated it to provide daily updates. This project was executed using Python, SQL, and the XGBoost framework.}\hfill \href{https://github.com/bilalhameed248/MTBC-CareCloud-Revenue-Cycle-Management}{github}
+
+    \vspace{7pt}
+    \resumeSubItem{Cirrus Chat Bot}
+          {Designed and implemented a ChatBot system for MTBC CareCloud's flagship product, "talkEHR/CareCloud Go." Generated and stored more than 3,000 question variations and their corresponding answers in a CSV file. Upon API calls, the system computes the cosine similarity between user-defined questions and precomputed text embeddings, retrieving the answer associated with the highest similarity index. Additionally, maintained a log in a CSV file of both user inputs and predicted responses to facilitate ongoing learning from past interactions and enhance the ChatBot's future performance. (Python, flask, TextEmbeddings, Gecko@001, text-bison, Vertex AI).}\hfill \href{https://github.com/bilalhameed248/FAQ-Chat-Bot-Using-VertexAI}{github}
+          
+    \vspace{7pt}
+    \resumeSubItem{CPT Suggestion}
+          {Developed a CPT Suggestion Service which utilizes patient information such as age, medication, lab test results/scales, and diabetes status to suggest accurate CPT codes for medical procedures. By automating the selection process, healthcare professionals can streamline billing and coding. (Python, Django, SQL and understanding of medical billing and CPT coding).}\hfill \href{https://github.com/bilalhameed248/CPT-Suggestion-Service}{github}
+    \resumeItemListEnd
+  
+    \resumeSubheading{MTBC CareCloud Inc.}{Islamabad Pakistan}
+    {Jr. Data Scientist (Full-time)}{Feb 2022 - Jun 2023}
+    \section{Projects}
+    \resumeItemListStart
+        
+        \resumeSubItem{FOX Physical Therapy Chart Review Bot}
+          {Designed \& Developed Chart Review Bot - A Patient Charts Auditing System, which reads through the patient appointment reports and assigns scores to component like (HPI, PLOF, Patient baseline-status, Discharge Report, Progress Report, Evaluation Assessment, Caregiver Training etc)  using natural language processing. (Bio-BERT V1.1, RASA, Pytorch  Spacy, NLTK, Fitz, Python Flask-backend, pandas, numpy, sklearn).}\hfill \href{https://foxauditbot.carecloud.com/}{foxauditbot.com}
+          
+          \vspace{7pt}
+        \begin{itemize}  
+           \resumeSubItem{Chart-Review Bot Document Parser API}
+          {Designed \& Developed a generic Data Extraction end-to-end pipeline, for Chart-review bot using complex (Plain + Tabular) Patient PDF document Charts. (PyMuPDF, Fitz, Camelot, NLTK, Spacy, OOP, Python-stack).}\hfill \href{https://github.com/bilalhameed248/PDF-Document-Extraction}{GitHub}
+        
+          \vspace{7pt}
+          
+          \resumeSubItem{Delay Reason Extraction Model}
+          {Developed Delay Reason Extraction Model, which analyze the document and extracts the reason for Patient delay in Appointment/Treatment (BERT, Tensorflow, HuggingFace Trainer API).}
+          \hfill \href{https://github.com/bilalhameed248/Data-Science/blob/main/nlp/finetuned_biobert_for_text_classification_using_tensorflow}{GitHub}
+          
+          \vspace{7pt}
+          
+          
+          \resumeSubItem{Patient Most Recent Treatments Similarity Measuring}
+          {Use Sentence Transformers to fine-tune a pre-train model BioBert on a downstream task. This model analyze the document containing information about a patient's most recent treatments and measure the similarity in between them. Use encode function to obtain sentence embeddings, followed by computing similarity scores using the Cosine Similarity method. (SentenceTransformer, DNN, BioBert, Cosine Similarity, Encode)).}\hfill \href{https://github.com/bilalhameed248/Data-Science/tree/main/nlp/sentence_sililarity_fine_tuning_using_biobert}{GitHub}
+          
+          \vspace{7pt}
+          
+          
+          \resumeSubItem{Brief Reviews Of Gain Prediction Model}
+          {The Gain Extraction Model analyzes Patient Discharge Summaries and predicts the progress of a patient's health.  Gain Extraction Model can determine whether a patient has made any improvements in their health and if they have met their goals. This model offers an efficient and effective way to track a patient's progress and ensure that they are receiving the best possible care. (BERT, Tensorflow, HuggingFace Trainer API).}\hfill \href{https://github.com/bilalhameed248/Data-Science/tree/main/nlp/brief_review_of_gain_prediction_model}{GitHub}
+        \end{itemize} 
+        
+          \vspace{7pt}
+          
+          \resumeSubItem{BGS Language Lab English Learning}{The Headstart School Rosetta Stone English Learning platform has been developed to provide children with an interactive and engaging way to learn English. The platform features speaking, pronunciation, question answering, vocabulary, and grammar learning modules. The Automatic Speech Recognition (ASR) component of the platform has been implemented using OpenAI's Whisper Large Model, while the REST APIs have been developed using the Django REST Framework. Additionally, the platform utilizes the fuzzywuzzy library for text similarity and is programmed in Python (Whisper, Django, fuzzywuzzy, Python).}
+          \href{http://portal.headstartbagh.com/}{portal.headstartbagh.com}
+          \hfill \href{https://github.com/bilalhameed248/Language-Lab-Speech-To-Text-APIs}{GitHub}
+          
+          \vspace{7pt}
+          
+          \resumeSubItem{Virtual Front Desk}{Developed a virtual front desk chatbot using Rasa, designed specifically for medical reception services. The chatbot is voice-based and is capable of performing a variety of tasks, such as scheduling new appointments, rescheduling existing appointments, cancelling appointments, handling prescription refill requests, processing report result requests, and fulfilling requests for report copies. The chatbot includes both urgent and normal request handling capabilities. To enhance accuracy and performance, we have incorporated the Whisper model for automatic speech recognition (ASR). Additionally, we have used Django for developing a robust REST API. (Whisper ASR, Django REST Framework, RASA, Python).}
+          \hfill \href{https://github.com/bilalhameed248/Virtual-Front-Desk
+          }{GitHub}
+         
+    \resumeItemListEnd
+    \section{Personal Projects}
+    \resumeItemListStart      
+          
+          \resumeSubItem{Urdu to Eng Machine Translation}{Developed a machine translation model for Urdu to English by fine-tuning a pre-trained model using the Hugging Face Trainer API. This model is based on the Sequence-to-Sequence architecture and incorporates an encoder-decoder framework. Additionally, we have used the Hugging Face pipeline for easy integration of the model into various applications. (Seq2Seq, Encoder Decoder, Huggingface Pipeline).}\hfill \href{https://github.com/bilalhameed248/Data-Science/tree/main/nlp/fine_tuned_urdu_to_english_MT_pre_trained_model}{GitHub}
+          
+          \vspace{7pt}
+          
+          \resumeSubItem{News Classification Model}{Developed a news classification model by fine-tuning pre-trained models, GPT-2 and BERT-base-cased. This model was trained to classify news articles based on their content, using techniques such as transfer learning and fine-tuning to improve its accuracy. The GPT-2 and BERT-base-cased models were chosen for their effectiveness in natural language processing tasks, making them ideal for this particular application. (NLP, GPT2, TensorFlow, PyTorch, BERT, HuggingFace Trainer API).}
+          \hfill \href{https://github.com/bilalhameed248/Data-Science/tree/main/nlp/fine_tuned_bert_for_text_classification_using_huggingface_trainer_api}{GitHub-BERT-base-cased} \hspace{3px}
+          \href{https://github.com/bilalhameed248/Data-Science/tree/main/nlp/fine_tuned_gpt2_for_text_classification}{GitHub-GPT2}
+          
+      
+      \resumeItemListEnd
+
+    % ---------Sec Experience---------------------
+    \vspace{10pt}
+    \resumeSubheading
+		{ConstRoot Systems Inc.}{Islamabad Pakistan}
+		{Web Developer (Full-time)}{Sep 2021 - Feb 2022}
+		\section{Projects}
+    \resumeItemListStart
+        \resumeSubItem{Construction Management Solution ConstRoot}
+          {Design \& Developed a construction management solution tailored for general contractors, built on a robust tech stack comprising Php Laravel, MySql, JQuery, HTML, and CSS. This solution offers a comprehensive set of features to help contractors effectively manage and oversee their projects, including project planning and scheduling, resource management, budget tracking, and communication management. With its user-friendly interface and reliable technology stack, this solution offers a seamless and efficient construction management experience for contractors.}\href{https://constroot.com/}{constroot.com}
+          \hfill \href{https://github.com/bilalhameed248/Construction-Management-Solution-ConstRoot}{GitHub}
+          
+      \resumeItemListEnd
+      
+      % ---------Third Experience---------------------
+    \vspace{15pt}
+    \resumeSubheading
+		{ADMK Sokutions.}{Islamabad Pakistan}
+		{Web Developer (Full-time)}{Sep 2020 - Aug 2021}
+		\section{Projects}
+    \resumeItemListStart
+    
+        \resumeSubItem{News Website NWSFD}
+          {Designed and developed a news website bot, built using Php CodeIgniter, MySql, JQuery, HTML, and CSS. This bot offers a range of features, including the ability to read email bodies from an open webmail/gmail account using IMAP, and create a list of news links from unseen emails. To optimize this process, we have implemented a job scheduling feature. The bot then visits each news link recursively, fetching title, description, and images, and stores the data in a database. Finally, the collected news data is displayed on the front-end of the website, providing users with up-to-date news in a seamless and user-friendly format.} \href{https://nwsfd.com/}{nwsfd.com}
+          \hfill \href{https://github.com/bilalhameed248/News-Website-NWSFD}{GitHub}
+          
+          \vspace{5pt}
+          
+          \resumeSubItem{KSA EduPortal: Empowering Saudi Education}{Designed and developed a comprehensive school management system for our KSA client, utilizing state-of-the-art technologies, such as Php Laravel, MySql, JQuery, HTML, and CSS. This system provides a robust set of features, including block management, branch management, class management, grade management, issue management, report management, school management, student management, teacher management, and a super admin section. With its intuitive interface and reliable technology stack, this school management system offers a seamless and efficient experience for managing various aspects of school operations.}
+          \hfill \href{https://github.com/bilalhameed248/KSA-EduPortal-Empowering-Saudi-Education}{GitHub}
+          
+          \vspace{5pt}
+          
+          \resumeSubItem{Turk Careers-Newface}{Designed and developed a web-based job portal using the latest technologies, including Php CodeIgniter, MySql, JQuery, HTML, and CSS. This job portal provides a comprehensive platform for job seekers to search for and apply to job opportunities, as well as for employers to post job listings and manage the recruitment process. With its user-friendly interface and robust technology stack, this job portal offers a seamless and efficient experience for both job seekers and employers.}
+          \href{https://newface.mk/}{newface.mk}
+          \hfill \href{https://github.com/bilalhameed248/Turk-Careers-newface.mk}{GitHub}
+          
+      \resumeItemListEnd
+      
+\resumeSubHeadingListEnd
+
+
+\vspace{-5pt}
+\section{Skills Summary}
+	\resumeSubHeadingListStart
+	\resumeSubItem{Deep Learning and NLP}{~PyTorch, TensorFlow, Keras, CNN, RNN, LSTM, GRU, Transformers, BERT, Spacy, Gensim.}
+	
+	\resumeSubItem{Machine Learning}{Classification, Regression, Clustering, PCA, Ensemble methods (Bagging, Boosting etc), Vertex AI, MLOps.}
+	
+	\resumeSubItem{Languages}{Python, PHP, C++, JavaScript, SQL, Bash, JAVA.}
+	
+	\resumeSubItem{Frameworks}{Django, Flask, Apache Spark(PySpark), Scikit, NLTK, SpaCy, Sentence-Transformers, MapReduce, TensorFlow, Keras, Laravel, Java Swing, Java Fx.}
+	
+	\resumeSubItem{Tools/IDEs}{Vim, VSCode, Jupyter Notebook, GIT, PostgreSQL, MySQL, SQLite.}
+	
+	\resumeSubItem{Version Control}{Git, Jira, Azure, Docker.}
+	
+	\resumeSubItem{OS}{Linux, Ubuntu, Windows.}
+	
+	\resumeSubItem{Front-end Technologies}{HTML, CSS, Jquery.}
+
+\resumeSubHeadingListEnd
+\vspace{5pt}
+
+%-----------EDUCATION-----------------
+\section{~~Specialization / Certification}
+  \resumeSubHeadingListStart
+    
+      \resumeSubItem{IBM Data Science Professional Certificate} \hfill {July 2021 - Sep 2021} \hfill\href{https://coursera.org/share/9646bdaef75093288e0cb4207eea67b3}{View Certification}
+      
+      \resumeSubItem{AWS Fundamentals Specialization} \hfill {Sep 2022 - Jan 2023} \hfill\href{https://coursera.org/share/8b3ce9b0488852a8ffd42c236ef0538e}{View Certification}
+      
+    % {\scriptsize \textit{ \footnotesize{\newline{}\textbf{}}}}
+    \resumeSubHeadingListEnd
+    
+\vspace{3pt}
+%-----------EDUCATION-----------------
+\section{~~Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {BS Computer Science (International Islamic University Islamabad)}
+      {CGPA: 3.59}{August 2016 - August 2020}
+      {\scriptsize \textit{ \footnotesize{\newline{}\textbf{}}}}
+    \resumeSubHeadingListEnd
+    
+\end{document}
